@@ -2,3 +2,4 @@ streamlit
 pandas
 numpy
 PyMuPDF
+transformers==4.30.2
