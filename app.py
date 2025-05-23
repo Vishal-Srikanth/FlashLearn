@@ -1,7 +1,7 @@
 import streamlit as st
 from pdf_parser import extract_text_from_pdf
 from summarizer import summarize_text
-from flashcard_gen import generate_flashcards
+from flashcard_generator import generate_flashcards
 
 st.set_page_config(page_title="FlashForge", layout="wide")
 st.title("📚 FlashForge - Turn PDFs into Flashcards with AI")

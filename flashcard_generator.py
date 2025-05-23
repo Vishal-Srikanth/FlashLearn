@@ -1,7 +1,11 @@
-from transformers import pipeline
-
+from transformers import pipeline, T5Tokenizer, AutoModelForSeq2SeqLM
 # Question generation pipeline
-qg_pipeline = pipeline("text2text-generation", model="iarfmoose/t5-base-question-generator")
+model_name = "iarfmoose/t5-base-question-generator"
+tokenizer = T5Tokenizer.from_pretrained(model_name, use_fast=False)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+
+qg_pipeline = pipeline("text2text-generation", model=model, tokenizer=tokenizer)
+
 
 def generate_flashcards(summary_chunks):
     flashcards = []
