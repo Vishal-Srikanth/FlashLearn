@@ -4,7 +4,7 @@ from summarizer import summarize_text
 from flashcard_generator import generate_flashcards
 
 st.set_page_config(page_title="FlashForge", layout="wide")
-st.title("📚 FlashForge - Turn PDFs into Flashcards with AI")
+st.title("📚 FlashLearn - Turn PDFs into Flashcards with AI")
 
 uploaded_file = st.file_uploader("Upload your textbook or slides (PDF)", type="pdf")
 
