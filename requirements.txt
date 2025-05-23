@@ -1,4 +1,4 @@
-These are the libraries needed: 
+"These are the libraries needed:"
 streamlit
 PyMuPDF
 transformers
